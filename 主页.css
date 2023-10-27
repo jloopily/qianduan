@@ -1,0 +1,89 @@
+*{
+    padding:0;margin:0;
+    color: #222;
+}
+a{
+    text-decoration: none;
+    padding-left: 12px;
+}
+a:hover{
+    color:#4e71f2;
+
+}
+.header .li_1{
+    float:left;
+    font:13px/23px Arial,sans-serif;
+    color:#222;
+    position:relative;
+    margin-right:31px;margin-top:19px;display:inline-block;
+
+}
+.li_1:hover{
+	background-image: url(大作业用图标.png);
+}
+.header{
+	 background-image: url('清明上河图.jpg');
+    height: 60px;
+    line-height:60px;
+    text-align: center;
+}
+.header .left{
+    float:left;
+}
+li{
+    list-style: none;
+}
+body {
+  background-image: url('替天行道.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.back-to {
+            bottom: 55px;
+            overflow: hidden;
+            position: fixed;
+            right: 10px;
+            width: 110px;
+            z-index: 999;
+        }
+
+        .back-to .back-top {
+
+            background: url("./back-to-top.png") no-repeat scroll 0 0 transparent;
+            display: block;
+            float: right;
+            height: 50px;
+            margin-left: 10px;
+            outline: 0 none;
+            text-indent: -9999em;
+            width: 50px;
+        }
+
+        .back-to .back-top:hover {
+            background-color: aliceblue;
+        }
+.personal{
+		position: absolute;
+		right: 300px;
+		top: 400px;
+		color:skyblue;
+		text-decoration:none;
+		font-family:sans-serif;
+		font-size:34px;
+			text-decoration:none;
+			text-shadow:  1px 1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff;
+			text-align: center;
+			display:block;
+			width:350px;
+			height:60px;
+			line-height:60px;
+			border:1px solid white;
+			border-radius:4px;
+			-webkit-transition:color .5s;
+			transition:color .5s;
+}
+.personal:hover{
+	    color:blue;
+		background:#FFF;
+}

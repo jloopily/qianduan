@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			主页
+		</title>
+		<link rel="stylesheet" href="主页.css"/>
+	</head>
+	<body>
+		<div style="height: 200px;" class="header" >
+		    <ul class="left" >
+		        <li class="li_1"><a href="注册和登录页.html" target="show"><img src="./注册登录-未使用.png"title="注册/登录" /></a></li>
+		        <li class="li_1"><a href="历史背景.html" target="show"><img src="./历史背景.png"title="历史背景"/></a></li>
+		        <li class="li_1"><a href="武松打虎.html" target="show"><img src="./武松打虎.png"title="武松打虎"/></a></li>
+		        <li class="li_1"><a href="./智取生辰纲.html" target="show"><img src="./智取生辰纲.png"title="智取生辰纲"/></a></li>
+		        <li class="li_1"><a href="./主要人物介绍.html" target="show"><img src="./主要人物.png"title="《水浒传》"/></a></li>
+		        <li class="li_1"><a href="./文学地位.html" target="show"><img src="./文学地位.png"title="《水浒传》"/></a></li>
+		        <li class="li_1" > </li>
+				</ul>
+		    </ul>
+			<div style="width: 300px; background-color: bisque;position: absolute;right: 200px;top: 50px;">
+				<p>背景音乐</p><audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="刘欢 - 好汉歌.mp3">背景音乐</audio>
+			</div>
+			</div>
+		<br />
+		<hr />
+	<!-- 浮动框架-->		
+		<div >
+				<iframe src="好汉歌 .mp4" name="show" width="1200px" height="1000px" scrolling="auto">
+				<video width="300" height="170" preload="auto" controls="controls" loop="loop" autoplay="autoplay">
+				   <source src="好汉歌 .mp4" type="video/mp4"  />
+				  </video>
+				  </iframe>
+		</div>
+		<h1 class="personal"><a  href="./个人主页.html" target="_blank">made by Shuo</a></h1>
+		<!--返回顶部的悬浮按钮-->
+	<div style="display:none;" class="back-to" id="toolBackTop">
+	        <a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top"></a>
+	    </div>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+	   $(function () {
+	               var bt = $('#toolBackTop');
+	               var sw = $(document.body)[0].clientWidth;
+	               var limitsw = (sw - 840) / 2 - 80;  //距离右侧距离
+	               if (limitsw > 0){
+	                   limitsw = parseInt(limitsw);
+	                   bt.css("right",limitsw/8);
+	               }
+	   
+	               $(window).scroll(function() {
+	                   var st = $(window).scrollTop();
+	                   if(st > 30){
+	                           bt.show();
+	                   }else{
+	                           bt.hide();
+	                   }
+	               });
+	       });
+	</script>
+	</body>
+</html>

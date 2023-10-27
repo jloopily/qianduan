@@ -1,0 +1,39 @@
+.content-basic{
+	position: absolute;
+	left: 500px;
+	top: 500px;
+}
+
+.click:hover{
+	color:blue;
+	background:#FFF;
+}
+.click{
+	
+	color:#ffffff;
+	text-decoration:none;
+	font-family:sans-serif;
+		text-decoration:none;
+		text-align: center;
+		display:block;
+		width:100px;
+		height:20px;
+		border:1px solid white;
+		border-radius:4px;
+		-webkit-transition:color .5s;
+		transition:color .5s;
+}
+.topic li{
+	background-color: red;  
+	 padding: 8px 15px;    
+	 float: left;   
+	 list-style: none;   
+	 color:#fff; 
+}
+.topic{
+	position: absolute;
+	margin-left: 600px;
+}
+.body{
+	background-image: url("./李逵.jpg");
+}
