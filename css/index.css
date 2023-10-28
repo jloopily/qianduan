@@ -12,7 +12,7 @@ li:hover{
 	text-decoration: underline;
 }
 body{
-	width: 1927px;
+	width: 1920px;
 	height: 100%;
 	margin: 0px auto;
 	position: relative;
@@ -143,9 +143,6 @@ img.site{
             width: 7710px;
         }
 
-        #arr {
-            /*display: none;*/
-        }
 
         #arr span {
             width: 64px;
@@ -308,9 +305,6 @@ img.site{
         height: 610px;
 }
 
-#arrs {
-    /*display: none;*/
-}
 
 #arrs span {
     width: 50px;
@@ -426,9 +420,6 @@ img.site{
 }
 #more,#mores{
 	cursor: pointer;
-}
-#more,#mores:hover{
-	
 }
 .MP,.MP1,.MP2{
 	width: 200px;
