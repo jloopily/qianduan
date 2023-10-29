@@ -2,9 +2,18 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>我们走首页</title>
+		<title>北印首页</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			/* 定义固定视频容器 */
+			#fixed-video {
+				position: fixed;
+				top: 80px; /* 你可以调整顶部距离 */
+				left: 20px; /* 你可以调整右边距离 */
+				z-index: 1000; /* 确保视频框在其他内容上方 */
+			}
+		</style>
 	</head>
 	<body>
 		<!--导航条开始-->
@@ -78,10 +87,36 @@
                 	<span id="watermark">结伴儿</span>
                 	<span id="mark">结伴儿</span>
                 	<span id="come">come</span>
+					<div id="fixed-video">
+						<video width="320" height="180" controls>
+							<source src="your-video.mp4" type="video/mp4">
+							<source src="your-video.webm" type="video/webm">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+				
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy, purus erat luctus dictum est, a luctus velit.
+					</p>
+					<!-- 添加大量文本，以便页面可滚动 -->
+				
+					<script>
+						// 使用JavaScript来处理视频框的位置
+						window.addEventListener('scroll', function () {
+							var videoContainer = document.getElementById('fixed-video');
+							var distanceFromTop = 20; // 顶部距离
+							var scrollPosition = window.scrollY;
+				
+							videoContainer.style.top = (distanceFromTop + scrollPosition) + 'px';
+						});
+					</script>
+					
                 	<div class="alls" id='box1'>
                         <div class="screen">
                             <ul>
                                 <li>
+									
+									
                                 	<div class="imgs">
                                 		<div class="img1">
                                 			<img src="img/user/48.png"/>
@@ -96,6 +131,7 @@
                                 		    <span>发<br/>现<br/>没<br/>的<br/>瞬<br/>间</span>
                                 		</div>
                                 	</div>
+									
                                 </li>
                                 <li>
                                 	<div class="imgs">
@@ -140,6 +176,7 @@
                 <!--内容1结束-->
                 <ul class="ul13">
                 	<li>热门</li>
+					
                 	<li>城市</li>
                 </ul>
                 <div class="contents2">
